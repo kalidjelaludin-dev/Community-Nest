@@ -30,3 +30,9 @@ This project is currently in its **Phase 1 (Frontend)**. I am currently learning
 - 🔐 **User Authentication:** Replacing the prompt-based sign-in with a secure backend system.
 - ☁️ **Cloud Database:** Moving from `localStorage` to a real-time database to allow all users to see each other's listings.
 - 🚀 **Official Release:** Once the backend is integrated, CommunityNest will be deployed for real-world use in our community.
+<img width="1919" height="888" alt="Screenshot 2025-12-25 053921" src="https://github.com/user-attachments/assets/f920eca9-1ada-4973-b5b3-bc1c9c96c02a" />
+<img width="1919" height="875" alt="Screenshot 2025-12-25 053946" src="https://github.com/user-attachments/assets/0a3e042e-b7bc-47f4-9def-d6e82f92e47e" />
+<img width="1917" height="879" alt="Screenshot 2025-12-25 054008" src="https://github.com/user-attachments/assets/5adf78f8-38f4-42e1-8f3b-3621fa5e7790" />
+
+
+
