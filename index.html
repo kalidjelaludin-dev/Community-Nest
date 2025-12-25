@@ -1,0 +1,207 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommunityNest | Premium Property Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">COMMUNITY<span>NEST</span></div>
+        <div class="nav-right">
+            <button class="btn-text">Browse</button>
+            <button class="btn-outline" id="listBtn">List Property</button>
+            <button class="btn-filled" id="authBtn">Sign In</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Local & Transparent</span>
+            <h1>Architecture is about <br><span class="accent">The Details.</span></h1>
+            <p>Every dimension, every square meter, verified by your community.</p>
+        </div>
+    </header>
+
+    <section class="filter-section">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search neighborhood...">
+            <select id="priceFilter">
+                <option value="all">Currency: Local</option>
+                <option value="low">Budget Friendly</option>
+                <option value="high">Premium Estate</option>
+            </select>
+        </div>
+    </section>
+
+    <main class="property-grid" id="propertyGrid">
+        </main>
+
+    <div id="detailOverlay" class="overlay">
+        <div class="overlay-content">
+            <button class="close-overlay">&times;</button>
+            <div id="dynamicContent"></div>
+        </div>
+    </div>
+    <div id="listOverlay" class="overlay">
+    <div class="overlay-content">
+        <button class="close-overlay" id="closeList">&times;</button>
+        <span class="badge">Seller Portal</span>
+        <h1 style="font-size: 3rem;">List Your Property</h1>
+        <p>Provide exact dimensions and details for our community records.</p>
+
+        <form id="propertyForm" class="huge-form">
+            <div class="form-grid">
+                <div class="input-group">
+                    <label>Property Title</label>
+                    <input type="text" id="newTitle" placeholder="e.g. Modern Bole Mansion" required>
+                </div>
+                <div class="input-group">
+                    <label>Neighborhood</label>
+                    <input type="text" id="newNeighborhood" placeholder="e.g. Old Airport" required>
+                </div>
+                <div class="input-group">
+                    <label>Price (ETB)</label>
+                    <input type="number" id="newPrice" placeholder="e.g. 5000000" required>
+                </div>
+                <div class="input-group">
+                    <label>Total Land Area</label>
+                    <input type="text" id="newArea" placeholder="e.g. 300 sq.m" required>
+                </div>
+                <div class="input-group">
+                    <label>Garden Width</label>
+                    <input type="text" id="newGarden" placeholder="e.g. 8 Meters" required>
+                </div>
+                <div class="input-group">
+                    <label>Floor Count</label>
+                    <input type="text" id="newFloors" placeholder="e.g. G+1" required>
+                </div>
+            </div>
+            <div class="input-group" style="margin-top: 2rem;">
+                <label>Description</label>
+                <textarea id="newDesc" rows="4" placeholder="Describe the architectural highlights..." required></textarea>
+            </div>
+            <button type="submit" class="btn-filled" style="margin-top: 2rem; width: 100%;">Publish Property Listing</button>
+        </form>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CommunityNest | Luxury Property Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">COMMUNITY<span>NEST</span></div>
+        <div class="nav-right">
+            <button class="btn-outline" id="listBtn">List Property</button>
+            <button class="btn-filled" id="authBtn">Sign In</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badge">Architecture & Dimensions</span>
+            <h1>FAIR PRICING TO <br><span class="accent">EVERYONE.</span></h1>
+            <p>Our goal is to eliminate inflated market pricing and provide quality housing at fair, <br>accessible rates for every seeker in our community.</p>
+        </div>
+    </header>
+
+    <section class="filter-section">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search neighborhood or title...">
+            <select id="priceFilter">
+                <option value="all">All Prices</option>
+                <option value="low">Under 10M ETB</option>
+                <option value="high">Above 10M ETB</option>
+            </select>
+        </div>
+    </section>
+    <section class="estimator-section">
+    <div class="estimator-container">
+        <span class="badge">Market Tool</span>
+        <h2>Build-Cost Estimator</h2>
+        <p>Estimate the value of your land based on current local construction rates.</p>
+        
+        <div class="estimator-controls">
+            <div class="input-group">
+                <label>Total Land Area (sq.m)</label>
+                <input type="number" id="estArea" value="100" min="50">
+            </div>
+            <div class="input-group">
+                <label>Finish Quality</label>
+                <select id="estQuality">
+                    <option value="25000">Standard (25k ETB/sqm)</option>
+                    <option value="45000">Luxury (45k ETB/sqm)</option>
+                    <option value="75000">Ultra-Premium (75k ETB/sqm)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="estimator-result">
+            <span class="spec-label">Estimated Market Value</span>
+            <div id="estTotal" class="total-price">2,500,000 ETB</div>
+        </div>
+    </div>
+</section>
+
+    <main class="property-grid" id="propertyGrid"></main>
+
+    <div id="listOverlay" class="overlay">
+        <div class="overlay-content">
+            <button class="close-overlay" id="closeList">&times;</button>
+            <h1  style="font-size: 2.5rem;">List Property</h1>
+            <form id="propertyForm" class="huge-form">
+                <div class="form-grid">
+                    <input type="text" id="newTitle" placeholder="Title" required>
+                    <input type="text" id="newNeighborhood" placeholder="Neighborhood" required>
+                    <input type="number" id="newPrice" placeholder="Price (ETB)" required>
+                    <input type="text" id="newArea" placeholder="Total Area (e.g. 300sqm)" required>
+                    <input type="text" id="newGarden" placeholder="Garden Width" required>
+                    <input type="text" id="newFloors" placeholder="Floors (e.g. G+1)" required>
+                    <input type="text" id="newRooms" placeholder="Number of rooms" required>
+                </div>
+                <textarea id="newDesc" rows="3" placeholder="Description" required></textarea>
+                <button type="submit" class="btn-filled" style="width:100%; margin-top:1rem;">Publish Listing</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="detailOverlay" class="overlay">
+        <div class="overlay-content">
+            <button class="close-overlay" id="closeDetails">&times;</button>
+            <div id="dynamicContent"></div>
+        </div>
+    </div>
+ <div id="compareBar" class="compare-bar">
+    <div class="compare-info">
+        <span id="compareCount">0</span> Properties Selected
+    </div>
+    <div class="compare-actions">
+        <button class="btn-outline" id="clearCompare">Clear</button>
+        <button class="btn-filled" id="launchCompare">Compare Dimensions</button>
+    </div>
+</div>
+
+<div id="compareOverlay" class="overlay">
+    <div class="overlay-content">
+        <button class="close-overlay" id="closeCompare">&times;</button>
+        <span class="badge">Technical Comparison</span>
+        <h1 style="font-size: 3rem; margin-bottom: 2rem;">Comparison Matrix</h1>
+        <div id="compareTableContainer"></div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
